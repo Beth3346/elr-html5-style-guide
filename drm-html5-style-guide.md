@@ -33,6 +33,11 @@ Adapted from: [http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xm
 			/* Recommended */
 			color: #e5e5e5;
 
+	+ Do not type any content in all caps
+		
+		+ this effect is presentational and should not be used in html files
+		+ use css text-transform to achieve all uppercase style		
+
 + Trailing Whitespace
 
 	+ Remove trailing white spaces.
@@ -124,6 +129,10 @@ Adapted from: [http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xm
 
 + Use elements (sometimes incorrectly called “tags”) for what they have been created for. For example, use heading elements for headings, p elements for paragraphs, a elements for anchors, etc.
 
++ Don't use add classes such as .center or .bold for block elements
+
+	+ If a block element needs styling add css styles in stylesheets
+
 + Using HTML according to its purpose is important for accessibility, reuse, and code efficiency reasons.
 
 		<!-- Not recommended -->
@@ -131,6 +140,28 @@ Adapted from: [http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xm
 
 		<!-- Recommended -->
 		<a href="recommendations/">All recommendations</a>
+
++ Headings
+
+	+ Always start with h1
+
+	+ Headings hierarchy should reset for each section
+
+	+ Use css to make headings smaller or larger for presentation
+
++ Sections and Divs
+
+	+ Use sections only when it makes sense sematically
+
+		+ Never use a section for presentation
+
+		+ Only use sections when a separate sematic section is needed
+
+		+ See [http://html5doctor.com/avoiding-common-html5-mistakes/](http://html5doctor.com/avoiding-common-html5-mistakes/)
+
+	+ Use divs when they are needed for presentation 
+
+		+ e.g. wrappers, holders, to visually separate content			
 
 ### Multimedia Fallback
 
@@ -277,3 +308,11 @@ The currency symbol for the Euro is “€”.
 		<a class='maia-button maia-button-secondary'>Sign in</a>
 		<!-- Recommended -->
 		<a class="maia-button maia-button-secondary">Sign in</a>
+
+### Buttons and Links
+
++ Never use a link unless it will have a href attribute
+
++ No 
+
+		href="#"		
