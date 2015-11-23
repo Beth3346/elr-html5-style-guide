@@ -190,13 +190,13 @@ The currency symbol for the Euro is “€”.
 
 ### Optional Tags
 
-+ Omit optional tags (optional).
-
-+ For file size optimization and scannability purposes, consider omitting optional tags. The HTML5 specification defines what tags can be omitted.
-
-+ (This approach may require a grace period to be established as a wider guideline as it’s significantly different from what web developers are typically taught. For consistency and simplicity reasons it’s best served omitting all optional tags, not just a selection.)
++ Always close tags.
 
         <!-- Not recommended -->
+        <!DOCTYPE html>
+        <title>Saving money, saving bytes</title>
+        <p>Qed.
+        <!-- Recommended -->
         <!DOCTYPE html>
         <html>
           <head>
@@ -206,10 +206,6 @@ The currency symbol for the Euro is “€”.
             <p>Sic.</p>
           </body>
         </html>
-        <!-- Recommended -->
-        <!DOCTYPE html>
-        <title>Saving money, saving bytes</title>
-        <p>Qed.
 
 ### type Attributes
 
@@ -246,19 +242,19 @@ The currency symbol for the Euro is “€”.
               <p><em>Space</em>, the final frontier.</p>
             </blockquote>
             <ul>
-              <li>Moe
-              <li>Larry
-              <li>Curly
+              <li>Moe</li>
+              <li>Larry</li>
+              <li>Curly</li>
             </ul>
             <table>
               <thead>
                 <tr>
-                  <th scope="col">Income
-                  <th scope="col">Taxes
+                  <th scope="col">Income</th>
+                  <th scope="col">Taxes</th>
               <tbody>
                 <tr>
-                  <td>$ 5.00
-                  <td>$ 4.50
+                  <td>$ 5.00</td>
+                  <td>$ 4.50</td>
             </table>
 
 ### HTML Quotation Marks
@@ -274,7 +270,7 @@ The currency symbol for the Euro is “€”.
 
 ### Buttons and Links
 
-+ Never use a link unless it will have a href attribute
++ Never use a link unless it will have a href attribute. Use a button or div instead.
 
 + No
 
